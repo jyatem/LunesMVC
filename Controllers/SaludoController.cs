@@ -15,6 +15,7 @@ public class SaludoController : Controller
     [HttpPost]
     public IActionResult Index(Persona persona)
     {
+        // Validar el modelo
         if (!ModelState.IsValid)
         {
             return View(persona);
